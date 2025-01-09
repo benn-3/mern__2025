@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            padding:80px;
+            margin-top: 150px;
+            margin-left:600px;
+            border: 5px solid rgb(16, 16, 1);
+            background-color: rgb(134, 236, 156);
+            border-radius: 10px;
+        }
+        button{
+            background-color: red;
+            color: yellow;
+        }
+        input{
+            border-radius: 5px;
+            height: 18px;
+        }
+    </style>
+    <script>
+        function redirect(){
+            const name=document.getElementById("name").value;
+            const password=document.getElementById("pass").value;
+            document.write("Name :"+name);
+            document.write("<br>");
+            document.write("Password :"+password);
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <form action="./Demo2.htm" method="post">
+            <h1>LOGIN</h1>
+            <label for="">Username:</label><input type="text" id="name"><br>
+            <label for="">Password:</label><input type="password" id="pass"><br><br>
+            <button type="submit" onclick="redirect()">Login</button>
+        </form>
+    </div>
+</body>
+</html>
