@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import "../../CSS/Navbar.css"
+import "../../Css/Navbar.css"
 import {useState} from "react"
 const Navbar=()=>{
     var [dropdown,showDropdown]=useState(false)
