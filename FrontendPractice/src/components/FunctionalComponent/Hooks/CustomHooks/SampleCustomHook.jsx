@@ -1,0 +1,11 @@
+import {useEffect,useState} from "react"
+const useLocalStorage=(key,value)=>{
+var [text,setText]=useState(()=>{
+ const jsonValue=localStorage.getItem(key)
+ if(jsonValue!=null) return JSON.parse(jsonValue)
+ return value
+})
+useEffect(()=>{localStorage.setItem(key,textJSON.stringify(text))},[key,text])
+return [text,setText]
+}
+export default useLocalStorage
